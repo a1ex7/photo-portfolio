@@ -1,0 +1,392 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic&subset=latin,cyrillic);
+
+
+body {
+  background: #383838;
+  font-family: 'Open Sans Condensed',sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+a {
+	font-weight: bold;
+}
+
+h1, h2 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0 2px 1px rgba(0,0,0,0.8);
+  font-weight: normal;
+}
+
+.section h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.section3 .fp-tableCell {
+	vertical-align: top;
+}
+
+.section1 {
+  text-align: center;
+}
+
+.section3 h1 {
+  padding: 100px 0 0 0;
+}
+
+.section-content {
+  padding: 80px 0;
+}
+
+.author {
+  border: 8px solid #fff;
+  display: inline-block;
+  font-size: 2.8em;
+  /*font-weight: bold;*/
+  padding: 10px 35px;
+  margin-bottom: 0.5em;
+  letter-spacing: 10px;
+}
+
+.skills {
+  letter-spacing: 5px;
+}
+
+#header {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  z-index: 9;
+  margin-top: 10px;
+}
+
+.logo {
+  background: url('imgs/photo-icon.png');
+  background-size: cover;
+  margin-left: 20px;
+  width: 64px;
+  height: 64px;
+  float: left;
+}
+
+.social {
+  background: url('imgs/vk-icon.png');
+  background-size: cover;
+  margin-right: 20px;
+  width: 42px;
+  height: 42px;
+  float: right;
+}
+
+.top-menu {
+  display: block;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  line-height: 64px;
+}
+
+.top-menu li {
+  display: inline-block;
+  margin: 10px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+.top-menu li.active {
+  background: rgba(0,0,0,0.5);
+}
+
+.top-menu li:hover {
+  background: rgba(255,255,255,0.8);
+}
+
+.top-menu li a {
+  display: block;
+  padding: 8px 18px;
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-weight: normal;
+}
+
+
+/*Фоны на секции*/
+.section {
+  background-size: cover;
+}
+
+.section1 {
+  background-image: url('imgs/bg1.jpg');
+}
+
+.section2 {
+  background-image: url('imgs/bg2.jpg');
+}
+
+.section3 {
+  background-image: url('imgs/bg3.jpg');
+}
+
+.section4 {
+  background-image: url('imgs/bg4.jpg');
+}
+
+
+/*О себе*/
+.about-wraper {
+  text-align: center;
+}
+
+.about-wraper .about-descr {
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  border-bottom: 2px dotted rgba(255,2555,255,0.5);
+}
+
+.foto-author {
+  text-align: center;
+}
+
+.foto-author img {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+.section ul,
+.section li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section li {
+  margin-bottom: 10px;
+}
+
+.social-wrap li {
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.social-wrap i {
+  font-size: 20px;
+  color: blue;
+}
+
+/*Портфолио*/
+
+.card {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.image-wrapper {
+  border: 6px solid #FFF;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.8);
+ 	transition: all 0.2s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-wrapper:hover {
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.8);
+}
+
+.image-wrapper:hover span.info{
+	bottom: 0;
+	opacity: 1;
+}
+
+.image-wrapper img {
+	width: 100%;
+	z-index: -2;
+	position: relative;
+
+}
+
+span.info {
+  color: yellow;
+  text-shadow: 0 1px 0 black;
+  font-style: italic;
+  font-size: 1.2em;
+  position: absolute;
+  bottom: -120px;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+/*Портфолио, вариант 2*/
+
+.portfolio-menu {
+  padding-bottom: 20px;
+}
+
+.portfolio-menu ul{
+  text-align: center;
+}
+
+.portfolio-menu ul li{
+  display: inline-block;
+  padding: 0 8px;
+  color: gray;
+  cursor: pointer;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.portfolio-menu ul li.active{
+  color: #fff;
+  border-bottom: 1px solid red;
+}
+
+.portfolio-item {
+  padding: 0;
+}
+
+.portfolio-item img {
+  width: 100%;
+}
+
+.port-item-desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.port-item-desc h3 {
+  margin-bottom: 10px;
+}
+
+.port-item-desc p {
+  color: gray;
+}
+
+.port-item-desc:hover {
+  opacity: 1;
+  padding-top: 5%;
+}
+
+.port-item-desc a{
+  display: inline-block;
+  background-color: transparent;
+  border: #fff 1px solid;
+  padding: 2px 10px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-color: #FF6347;
+  color: #FF6347;
+}
+
+.port-item-full-desc {
+  position: relative;
+  background-color: #fff;
+  padding: 10px;
+  width: 80%;
+  max-width: 960px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.port-item-full-desc h3 {
+  margin-top: 0;
+  color: black;
+}
+
+.port-item-full-desc p {
+  color: gray;
+}
+
+.port-item-full-desc img {
+  width: 100%;
+}
+
+
+#mixitup .mix{
+  display: none;
+}
+
+/*Контакты и форма*/
+
+.section4 .about-wraper {
+	margin-bottom: 80px;
+}
+
+.contact-box {
+	font-size:1.2em;
+}
+
+.contact-box h3 {
+	text-align: left;
+	margin: 0;
+	font-size: 1.2em;
+}
+
+
+.form-group {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: normal;
+	font-size:1.2em;
+}
+
+.form-group input,
+.form-group textarea {
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+	padding: 5px 10px;
+	border: 1px dotted white;
+	box-shadow: 0 0 5px gray;
+	color: gray;
+	background-color: rgba(255,255,255,0.5);
+	font-weight: bold;
+}
+
+.form-group button {
+	padding: 5px 20px;
+	border: 1px dotted white;
+	box-shadow: 0 0 5px gray;
+	color: white;
+	background-color: red;
+	float: right;
+	margin-top: 20px;
+}
+
+/*Адаптивность*/
+
+@media screen and (max-width: 630px) {
+  .top-menu {
+    display: none;
+  }
+
+  .section-content {
+    padding-top: 20px;
+  }
+}
